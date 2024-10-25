@@ -79,11 +79,11 @@ dmesg -n8
 **DUT1**
 
 bridge fdb show\
-00:00:07:aa:d7:2f dev vxlan0 master br-lan (same as last)
-00:03:7f:46:67:eb dev vxlan0 master br-lan (same as second last)
+00:00:07:aa:d7:2f dev vxlan0 master br-lan (same as last)\
+00:03:7f:46:67:eb dev vxlan0 master br-lan (same as second last)\
 2a:50:ef:7c:ce:95 dev vxlan0 master br-lan permanent => its is vxlan0 macaddress of the same DUT. It will be added as soon as you add vxlan0 to bridge.\
 00:00:00:00:00:00 dev vxlan0 dst 172.16.10.20 via eth5 self permanent => It is the 0 mac address. It is added as the 1st MAC address. It is the default route.\
-00:03:7f:46:67:eb dev vxlan0 dst 172.16.10.20 self => (br-lan and eth4 (LAN) mac of DUT2). They both have same mac address
+00:03:7f:46:67:eb dev vxlan0 dst 172.16.10.20 self => (br-lan and eth4 (LAN) mac of DUT2). They both have same mac address.\
 00:00:07:aa:d7:2f dev vxlan0 dst 172.16.10.20 self => It is the MAC address of the client connected to the other end (client connected to PC2)
 
 **DUT2:**
