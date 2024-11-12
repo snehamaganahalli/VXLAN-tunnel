@@ -89,3 +89,17 @@ bridge fdb show\
 **DUT2:**
 
 similar to DUT1
+
+==========================
+
+VXLAN tunnel uses a destination port 4789.
+
+Difference between VXLAN and VLAN
+
+VLAN
+12 bit identifier, Therefore 2^12 = 4096 subnets.
+
+VXLAN
+24 bit identifier (Double the VLAN) => 2^24 = 1,67,77,216 subnets => 16 million or 1.6 crore subnets
+
+VLANs operate with a 12-bit network identifier. This means that you can only create 4096 administrative domains within your network using VLANs. On the other hand, VXLANs operate with a 24-bit network identifier. With this, you can theoretically create as many as 16 million administrative domains.
